@@ -106,6 +106,7 @@ class Main : Runnable {
   private lateinit var client: OkHttpClient
 
   override fun run() {
+    // rfkjrfkjlr4fjkghl4r
     if (completionScript) {
       println(picocli.AutoComplete.bash("okcurl", CommandLine(Main())))
       return
