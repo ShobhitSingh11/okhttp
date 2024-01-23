@@ -23,6 +23,7 @@ import okio.Timeout
  * represents a single request/response pair (stream), it cannot be executed twice.
  */
 interface Call : Cloneable {
+  // hello world
   /** Returns the original request that initiated this call. */
   fun request(): Request
 
@@ -75,6 +76,7 @@ interface Call : Cloneable {
    * error to execute a call more than once.
    */
   fun isExecuted(): Boolean
+  // hello world
 
   fun isCanceled(): Boolean
 
