@@ -47,6 +47,7 @@ class HttpLoggingInterceptor @JvmOverloads constructor(
   @Volatile var level = Level.NONE
 
   enum class Level {
+    // change 1
     /** No logs. */
     NONE,
 
