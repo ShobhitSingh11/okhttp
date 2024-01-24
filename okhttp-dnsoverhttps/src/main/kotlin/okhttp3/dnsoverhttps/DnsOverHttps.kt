@@ -156,6 +156,7 @@ class DnsOverHttps internal constructor(
   private fun throwBestFailure(hostname: String, failures: List<Exception>): List<InetAddress> {
     if (failures.isEmpty()) {
       throw UnknownHostException(hostname)
+      // change2
     }
 
     val failure = failures[0]
