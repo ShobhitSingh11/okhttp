@@ -12,7 +12,7 @@ buildscript {
     classpath Dependencies.errorpronePlugin
     classpath Dependencies.spotlessPlugin
   }
-
+  
   repositories {
     mavenCentral()
     gradlePluginPortal()
@@ -116,7 +116,7 @@ subprojects { project ->
   }
 
   test {
-    useJUnitPlatform()
+    
     jvmArgs += "-Dokhttp.platform=$platform"
 
     javaLauncher = javaToolchains.launcherFor {
@@ -131,6 +131,10 @@ subprojects { project ->
 
     systemProperty 'okhttp.platform', platform
     systemProperty 'junit.jupiter.extensions.autodetection.enabled', 'true'
+  }
+
+  test {
+    useJUnitPlatform()
   }
 
   if (platform == "jdk8alpn") {
