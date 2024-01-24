@@ -20,6 +20,7 @@ import okhttp3.Request
 interface EventSource {
   /** Returns the original request that initiated this event source. */
   fun request(): Request
+  // change 3
 
   /**
    * Immediately and violently release resources held by this event source. This does nothing if
