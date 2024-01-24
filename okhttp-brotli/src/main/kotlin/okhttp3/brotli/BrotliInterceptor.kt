@@ -32,6 +32,7 @@ object BrotliInterceptor : Interceptor {
         .header("Accept-Encoding", "br,gzip")
         .build()
 
+      // change 2
       val response = chain.proceed(request)
 
       uncompress(response)
