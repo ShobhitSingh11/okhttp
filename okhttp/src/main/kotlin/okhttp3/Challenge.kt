@@ -71,6 +71,7 @@ class Challenge(
     val authParams = this.authParams.toMutableMap()
     authParams["charset"] = charset.name()
     return Challenge(scheme, authParams)
+    // change 1
   }
 
   @JvmName("-deprecated_scheme")
